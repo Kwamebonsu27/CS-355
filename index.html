@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>My first page</title>
+        
+    </head>
+    <style>
+        body{
+            color: blue;
+            background-color: white;
+
+        }
+        
+    </style>
     <body>
-        hello world
+        <h1 id="myHeading"><b>Kwame's Website</b></h1>  </b><p> </p>
+        <p><b>computer  is the best device you can ever have </b></p>
+        <br>
+        <p id="output">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iure architecto consectetur, repellendus impedit harum, omnis iusto illo aliquid non est natus perspiciatis dignissimos odit error mollitia iste possimus illum?</p>
+        <a href="https://en.wikipedia.org/wiki/Ghana">
+        <img src="/images/Flag_of_Ghana.svg_.png" height="300"width="400"alt="">
+        </a>
+        
+        <button onclick="changeColor()" onmouseover="revert()" id="myButton">click me</button>
+        <a href="ghana.html">Visit Ghana here!!!</a>
+        <a href="usa.html">Visit USA here!!!</a>
+        <script>
+        
+        function changeColor(){
+            var col = document.getElementById("output").style.color = "orange";
+        }
+        function revert(){
+            var col = document.getElementById("output").style.color = "black";
+        }
+        </script>
     </body>
+    
 </html>
